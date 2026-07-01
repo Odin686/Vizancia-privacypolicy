@@ -4,19 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Privacy Policy for Vizancia — an offline-first educational app that teaches Artificial Intelligence concepts. Zero data collection.">
+    <meta name="robots" content="index, follow">
     <title>Vizancia — Privacy Policy</title>
     <style>
         :root {
             --primary: #6C5CE7;
+            --accent: #00CEC9;
             --bg: #F8F9FE;
             --text: #2D3436;
             --muted: #636E72;
+            --border: #ECECF4;
+            --card: #FFFFFF;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -28,30 +38,57 @@
         }
 
         .container {
-            max-width: 680px;
+            max-width: 760px;
             margin: 0 auto;
-            background: white;
+            background: var(--card);
             border-radius: 16px;
             padding: 48px 40px;
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 30px;
             color: var(--primary);
             margin-bottom: 8px;
+            letter-spacing: -0.02em;
         }
 
         .subtitle {
             color: var(--muted);
             font-size: 14px;
-            margin-bottom: 32px;
+            margin-bottom: 8px;
+        }
+
+        .meta-dates {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #E8F5E9;
+            color: #2E7D32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
         }
 
         h2 {
             font-size: 20px;
-            margin-top: 28px;
+            margin-top: 36px;
             margin-bottom: 12px;
+            color: var(--text);
+            scroll-margin-top: 20px;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 8px;
             color: var(--text);
         }
 
@@ -70,6 +107,15 @@
             margin-bottom: 8px;
         }
 
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .highlight {
             background: linear-gradient(135deg, #6C5CE7, #00CEC9);
             -webkit-background-clip: text;
@@ -78,24 +124,89 @@
             font-weight: 700;
         }
 
-        .badge {
-            display: inline-block;
-            background: #E8F5E9;
-            color: #2E7D32;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 13px;
+        .summary {
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.06), rgba(0, 206, 201, 0.06));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0 8px;
+        }
+
+        .summary h2 {
+            margin-top: 0;
+        }
+
+        .summary ul {
+            margin-bottom: 0;
+        }
+
+        .toc {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 28px 0;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--muted);
+        }
+
+        .toc ol {
+            padding-left: 20px;
+            columns: 2;
+            column-gap: 32px;
+        }
+
+        .toc li {
+            font-size: 14px;
+            margin-bottom: 6px;
+            break-inside: avoid;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0 16px;
+            font-size: 14px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            color: var(--muted);
+            vertical-align: top;
+        }
+
+        th {
+            background: var(--bg);
+            color: var(--text);
             font-weight: 600;
-            margin-bottom: 24px;
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 44px;
             padding-top: 20px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid var(--border);
             font-size: 13px;
             color: var(--muted);
             text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 22px;
+            }
+
+            .toc ol {
+                columns: 1;
+            }
         }
     </style>
 </head>
@@ -103,58 +214,240 @@
 <body>
     <div class="container">
         <h1>🧠 Vizancia</h1>
-        <p class="subtitle">Privacy Policy — Last updated: May 31, 2026</p>
+        <p class="subtitle">Privacy Policy</p>
+        <p class="meta-dates"><strong>Effective date:</strong> May 31, 2026 &nbsp;·&nbsp; <strong>Last
+                updated:</strong> May 31, 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2.0</p>
         <span class="badge">🔒 Zero Data Collection</span>
 
-        <h2>Overview</h2>
-        <p>Vizancia is an offline-first educational app that teaches Artificial Intelligence concepts through
-            interactive lessons and mini-games. <strong class="highlight">We do not collect, store, or transmit any
-                personal data.</strong></p>
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Vizancia is an offline-first educational app that teaches Artificial Intelligence concepts through
+                interactive lessons and mini-games. In plain language:</p>
+            <ul>
+                <li>We <strong>do not collect, store, sell, rent, or transmit</strong> any personal information.</li>
+                <li>There are <strong>no accounts, no logins, no analytics, no advertising, and no tracking.</strong>
+                </li>
+                <li>Your learning progress is stored <strong>only on your device</strong> and never sent to us.</li>
+                <li>The app works <strong>fully offline</strong>. Optional multiplayer uses Apple Game Center, which
+                    Apple operates under its own privacy policy.</li>
+                <li>This summary is provided for convenience only and does not replace the full policy below.</li>
+            </ul>
+        </div>
 
-        <h2>Data We Collect</h2>
-        <p><strong>None.</strong> Vizancia does not collect any personal information whatsoever. Specifically:</p>
+        <nav class="toc" aria-label="Table of contents">
+            <h2>Contents</h2>
+            <ol>
+                <li><a href="#scope">Who We Are &amp; Scope</a></li>
+                <li><a href="#definitions">Key Terms</a></li>
+                <li><a href="#collect">Information We Collect</a></li>
+                <li><a href="#device">Data Stored on Your Device</a></li>
+                <li><a href="#platform">Platform &amp; Third-Party Services</a></li>
+                <li><a href="#purposes">How &amp; Why We Use Information</a></li>
+                <li><a href="#legal-basis">Legal Bases for Processing</a></li>
+                <li><a href="#sharing">Disclosure of Information</a></li>
+                <li><a href="#retention">Data Retention</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#transfers">International Data Transfers</a></li>
+                <li><a href="#rights">Your Privacy Rights</a></li>
+                <li><a href="#dnt">Do Not Track</a></li>
+                <li><a href="#breach">Data Breach Notification</a></li>
+                <li><a href="#links">Third-Party Links</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#law">Governing Law</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </nav>
+
+        <h2 id="scope">1. Who We Are &amp; Scope</h2>
+        <p>This Privacy Policy ("Policy") explains how Vizancia ("Vizancia," "we," "us," or "our") handles information in
+            connection with the Vizancia mobile application and any related websites, features, or services
+            (collectively, the "App" or "Services").</p>
+        <p>Vizancia is the party responsible for the App and acts as the "data controller" (or equivalent) for the
+            limited purposes described in this Policy. This Policy applies to all users of the App worldwide. Because the
+            App is designed to be offline-first and does not collect personal information, most privacy obligations that
+            apply to data-collecting services do not arise here; where they may, we describe your rights below.</p>
+        <p>By downloading, installing, or using the App, you acknowledge that you have read and understood this Policy.
+            If you do not agree with it, please do not use the App.</p>
+
+        <h2 id="definitions">2. Key Terms</h2>
         <ul>
-            <li>No account creation or login required</li>
-            <li>No email addresses, names, or contact information collected</li>
-            <li>No location data, device identifiers, or usage analytics</li>
-            <li>No cookies, tracking pixels, or advertising identifiers</li>
-            <li>No data shared with third parties</li>
+            <li><strong>Personal information / personal data</strong> means information that identifies, relates to, or
+                could reasonably be linked to an identifiable individual, as defined under applicable laws such as
+                Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA), the EU/UK
+                <em>General Data Protection Regulation</em> (GDPR), and the <em>California Consumer Privacy Act</em> as
+                amended by the CPRA (CCPA/CPRA).</li>
+            <li><strong>Process / processing</strong> means any operation performed on data, such as collecting, storing,
+                using, or sharing it.</li>
+            <li><strong>On-device data</strong> means information generated and saved locally on your device that we
+                cannot access.</li>
         </ul>
 
-        <h2>Data Stored on Your Device</h2>
+        <h2 id="collect">3. Information We Collect</h2>
+        <p><strong>None.</strong> Vizancia does not collect any personal information whatsoever. We have designed the App
+            so that no personal data is required to use it. Specifically, we do <strong>not</strong> collect:</p>
+        <ul>
+            <li>Account credentials — no account creation or login is required or offered;</li>
+            <li>Email addresses, names, phone numbers, or other contact information;</li>
+            <li>Location data (precise or approximate);</li>
+            <li>Device identifiers, advertising identifiers (IDFA), or persistent identifiers;</li>
+            <li>Usage analytics, telemetry, behavioral data, or performance metrics;</li>
+            <li>Cookies, web beacons, tracking pixels, or fingerprinting technologies;</li>
+            <li>Photos, contacts, microphone, camera, or health data;</li>
+            <li>Payment or financial information (any purchases are handled by Apple, not by us).</li>
+        </ul>
+        <p>Because we collect no personal information, we do not build user profiles, we do not sell or "share" personal
+            information for cross-context behavioral advertising, and we have no personal information to disclose in
+            response to a data-subject request.</p>
+
+        <h2 id="device">4. Data Stored on Your Device</h2>
         <p>Vizancia stores your learning progress locally on your device using Apple's SwiftData framework. This
-            includes:</p>
+            on-device data may include:</p>
         <ul>
-            <li>Lesson completion progress and scores</li>
-            <li>XP earned, level, and streak data</li>
-            <li>Achievement unlock status</li>
-            <li>App preferences and settings</li>
+            <li>Lesson completion progress and scores;</li>
+            <li>XP earned, level, and streak data;</li>
+            <li>Achievement unlock status;</li>
+            <li>App preferences and settings.</li>
         </ul>
-        <p>This data <strong>never leaves your device</strong> and is not accessible to us or any third party. If you
-            delete the app, all local data is permanently removed.</p>
+        <p>This information is stored solely on your device. It <strong>never leaves your device</strong>, is
+            <strong>never transmitted to us</strong>, and is <strong>not accessible to us or to any third party</strong>.
+            We cannot read, retrieve, or restore it. If your device has iCloud backup enabled by you, this data may be
+            included in your personal, encrypted device backup managed by Apple under Apple's terms — we have no access to
+            those backups. If you delete the App, all associated local data is permanently removed from your device.</p>
 
-        <h2>Third-Party Services</h2>
-        <p>Vizancia does not integrate any third-party analytics, advertising, or data collection SDKs. The app
-            functions entirely offline. The only external service used is Apple's Game Center, which powers optional
-            multiplayer features (available to high school grade band only). Game Center is managed entirely by Apple
-            under their own privacy policy. Vizancia does not access, store, or transmit your Game Center profile
-            information.</p>
+        <h2 id="platform">5. Platform &amp; Third-Party Services</h2>
+        <p>Vizancia does not integrate any third-party analytics, advertising, attribution, or data-collection SDKs. The
+            App functions entirely offline. However, you should be aware of the following platform services:</p>
+        <h3>Apple App Store &amp; operating system</h3>
+        <p>The App is distributed through the Apple App Store and runs on Apple's operating systems. Apple may
+            independently collect certain information (for example, download, purchase, and aggregate crash or diagnostic
+            data) as the platform provider. This collection is governed by <a href="https://www.apple.com/legal/privacy/"
+                target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a> and is outside our control. We do
+            not receive personally identifiable information from Apple through this channel.</p>
+        <h3>Apple Game Center (optional)</h3>
+        <p>The only external service Vizancia connects to is Apple's Game Center, which powers optional multiplayer
+            features. Game Center is available only within the high school grade band and is used only if you choose to
+            enable it. Game Center is operated and managed entirely by Apple under Apple's own privacy policy. Vizancia
+            does not access, store, transmit, or receive your Game Center profile information, and we do not maintain our
+            own copy of any multiplayer or leaderboard data on our servers. Your use of Game Center is subject to Apple's
+            terms and privacy practices.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>Vizancia does not collect any data from any user, including children under 13. The app is safe for all
-            ages.</p>
+        <h2 id="purposes">6. How &amp; Why We Use Information</h2>
+        <p>Because we do not collect personal information, we do not use it for any purpose. The on-device data described
+            in Section 4 is used only locally, on your device, to provide core app functionality — such as saving your
+            progress, tracking achievements, and applying your preferences. None of this processing involves us or any
+            server.</p>
 
-        <h2>Notifications</h2>
-        <p>If you choose to enable daily reminder notifications, these are scheduled locally on your device using
-            Apple's notification system. No data is sent to any server.</p>
+        <h2 id="legal-basis">7. Legal Bases for Processing</h2>
+        <p>Where the GDPR or similar laws apply, a legal basis is required to process personal data. Vizancia does not
+            process personal data on any server, so no legal basis is engaged for such processing. To the limited extent
+            that on-device functionality could be characterized as processing, it is carried out locally to perform the
+            service you request (contractual necessity) and/or based on your consent, which you may withdraw at any time
+            by disabling the relevant feature or deleting the App.</p>
 
-        <h2>Changes to This Policy</h2>
-        <p>If we update this privacy policy, we will post the changes here with a new effective date. Since we don't
-            collect any data, there is nothing material to change.</p>
+        <h2 id="sharing">8. Disclosure of Information</h2>
+        <p>We do not sell, rent, trade, or share personal information with anyone, because we do not collect any. We do
+            not disclose personal information to advertisers, data brokers, or analytics providers.</p>
+        <p>In the unlikely event that we are legally compelled to respond to a lawful request from a public authority, we
+            would have no personal information to produce. Should Vizancia ever be involved in a merger, acquisition, or
+            sale of assets, this Policy would continue to apply to any information covered by it, and we would provide
+            notice of any material change as described in Section 18.</p>
 
-        <h2>Contact</h2>
-        <p>If you have any questions about this privacy policy, you can reach us at:</p>
-        <p><strong>Email:</strong> info@vizancia.ca</p>
+        <h2 id="retention">9. Data Retention</h2>
+        <p>We do not retain any personal information on our systems because we do not collect any. On-device data is
+            retained on your device for as long as the App is installed and is deleted when you remove the App or clear
+            its data through your device settings.</p>
+
+        <h2 id="security">10. Security</h2>
+        <p>The most effective privacy protection is not collecting data in the first place, and that is the approach
+            Vizancia takes. Because personal information is never transmitted to or stored by us, it is not exposed to
+            server-side breaches, interception in transit, or unauthorized access on our end. On-device data benefits
+            from the security protections built into your device's operating system, including device-level encryption
+            and app sandboxing. No method of electronic storage is ever completely secure, and you are responsible for
+            maintaining the security of your own device (for example, by using a passcode and keeping your software up to
+            date).</p>
+
+        <h2 id="children">11. Children's Privacy</h2>
+        <p>Vizancia is an educational app intended to be safe for learners of all ages, including children. Consistent
+            with our zero-collection design, we do <strong>not</strong> knowingly collect, store, or transmit personal
+            information from any user, including children under the age of 13 (or the equivalent minimum age in your
+            jurisdiction, such as 16 in parts of the EU/EEA).</p>
+        <p>We designed the App to comply with the principles of the U.S. <em>Children's Online Privacy Protection Act</em>
+            (COPPA), the "GDPR-K" provisions of the GDPR concerning children, and Apple's requirements for apps directed
+            to children. The App does not contain behavioral advertising, does not include third-party analytics, and
+            does not enable children to make personal information publicly available.</p>
+        <p>Because we do not collect data from anyone, there is no children's personal information for a parent or
+            guardian to review, delete, or restrict. If you are a parent or guardian and have any questions about the
+            App's privacy practices, please contact us using the details in Section 20.</p>
+
+        <h2 id="notifications">12. Notifications</h2>
+        <p>If you choose to enable daily reminder notifications, these are scheduled and delivered locally on your device
+            using Apple's local notification system. No notification content or scheduling data is sent to us or to any
+            server. You can disable notifications at any time in your device settings.</p>
+
+        <h2 id="transfers">13. International Data Transfers</h2>
+        <p>Vizancia does not transfer personal information across borders because it does not collect or transmit any
+            personal information. On-device data remains on your device wherever you are located. Any platform-level data
+            handled by Apple is subject to Apple's own international transfer safeguards.</p>
+
+        <h2 id="rights">14. Your Privacy Rights</h2>
+        <p>Depending on where you live, you may have rights over your personal information under laws such as PIPEDA
+            (Canada), the GDPR/UK GDPR (EU/EEA/UK), and the CCPA/CPRA (California). These may include the right to access,
+            correct, delete, port, or restrict the processing of your personal information, the right to withdraw
+            consent, the right to object, and the right not to be discriminated against for exercising your rights.</p>
+        <p>Because Vizancia holds no personal information about you, there is generally nothing for us to access,
+            correct, delete, or port on your behalf. You nonetheless remain in full control of your on-device data, which
+            you can delete at any time by clearing the App's data or uninstalling the App. If you wish to exercise a
+            right or ask a question, contact us using Section 20 and we will respond within the timeframe required by
+            applicable law.</p>
+        <h3>Additional information for California residents</h3>
+        <p>We do not "sell" or "share" personal information as those terms are defined under the CCPA/CPRA, and we do not
+            use or disclose sensitive personal information for purposes that would trigger a right to limit. In the
+            preceding 12 months, we have not collected any categories of personal information.</p>
+        <h3>Additional information for Canadian residents</h3>
+        <p>Consistent with PIPEDA and applicable provincial legislation, we practice data minimization by not collecting
+            personal information. You may direct any privacy inquiry or complaint to us, and you also have the right to
+            contact the Office of the Privacy Commissioner of Canada.</p>
+        <h3>Additional information for EEA/UK residents</h3>
+        <p>You have the right to lodge a complaint with your local data protection authority. As no personal data is
+            processed on our servers, most data-subject requests will result in confirmation that we hold no such data.
+        </p>
+
+        <h2 id="dnt">15. Do Not Track</h2>
+        <p>The App does not track users across apps or websites and does not use technologies that respond to "Do Not
+            Track" signals, because no tracking occurs. On Apple devices, App Tracking Transparency is not triggered
+            because Vizancia does not track you.</p>
+
+        <h2 id="breach">16. Data Breach Notification</h2>
+        <p>Because we do not collect or store personal information on our systems, there is no personal information that
+            could be exposed in a breach of our systems. In the unlikely event of any incident that we determine could
+            affect user privacy, we will act in accordance with applicable breach-notification laws and post any required
+            notice here.</p>
+
+        <h2 id="links">17. Third-Party Links</h2>
+        <p>The App or this page may occasionally reference third-party services (such as Apple). We are not responsible
+            for the privacy practices or content of those third parties. We encourage you to review the privacy policies
+            of any third-party service you use.</p>
+
+        <h2 id="changes">18. Changes to This Policy</h2>
+        <p>We may update this Policy from time to time to reflect changes in the App, our practices, or legal
+            requirements. When we make changes, we will revise the "Last updated" date above and post the updated Policy
+            on this page. If we make a material change, we will take reasonable steps to provide additional notice (for
+            example, an in-app notice) where required by law. Your continued use of the App after an update takes effect
+            constitutes acceptance of the revised Policy. We encourage you to review this page periodically.</p>
+
+        <h2 id="law">19. Governing Law</h2>
+        <p>This Policy is governed by and construed in accordance with the laws of Canada and the province in which
+            Vizancia is established, without regard to conflict-of-law principles, except where mandatory local consumer
+            or privacy laws grant you additional protections. Nothing in this Policy limits any non-waivable rights you
+            have under the laws applicable to you.</p>
+
+        <h2 id="contact">20. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Policy or your privacy, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:info@vizancia.ca">info@vizancia.ca</a></p>
+        <p>We will make reasonable efforts to respond to privacy inquiries promptly and within any timeframe required by
+            applicable law.</p>
 
         <footer>
             &copy; 2026 Vizancia. All rights reserved. Built with ❤️ for AI learners everywhere.
